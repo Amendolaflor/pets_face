@@ -34,7 +34,7 @@
 // }
 
 //FUNCION PARA GENERAR HTML
-function generarRobot(robot) {
+function generarRobot(mascota) {
   return `<div class="column">
           <img src="${robot.avatar}">
           <div class="container">

@@ -1,4 +1,36 @@
+const todasLasMascotas = [
+	{
+		"id": 1,
+		"image": "./imgs/cobadf" ,
+		"name": "Tatito",
+		"type": "gato",
+		"abilities": "",	
+		"hobbies": "sdasd",
+	},
+	{
+		"id": 1,
+		"image": "./imgs/cobadf" ,
+		"name": "Tatito",
+		"type": "gato",
+		"abilities": "",		
+		"hobbies": ""
+	},
+	{
+		"id": 1,
+		"image": "./imgs/cobadf" ,
+		"name": "Tatito",
+		"type": "gato",
+		"abilities": "",		
+		"hobbies": "",
+	},
 
+
+
+
+
+
+
+]
 
 
 
