@@ -1,1 +1,19 @@
 /* Nuestros estilos */
+
+.carousel {
+	margin-bottom: 100px;
+}
+
+.carousel-caption .banner {
+	font-family: "Dosis", sans-serif;
+	font-size: 80px;
+	word-spacing: 500%;
+}
+
+.carousel-caption #titulo-pagina {
+	font-family: "Anton", sans-serif;
+	font-weight: 200px;
+	font-size: 100px;
+	word-spacing: 500%; 
+}
+
