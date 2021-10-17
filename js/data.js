@@ -1,36 +1,110 @@
 const todasLasMascotas = [
 	{
 		"id": 1,
-		"image": "./imgs/cobadf" ,
-		"name": "Tatito",
+		"name": "Garfiel",
 		"type": "gato",
-		"abilities": "",	
-		"hobbies": "sdasd",
+		"abilities": "Duerme sin descanso",
+		"hobbies": "Tomar sol",
+		"image": "./imgs/garfield.jpg",
 	},
 	{
-		"id": 1,
-		"image": "./imgs/cobadf" ,
-		"name": "Tatito",
+		"id": 2,
+		"name": "Milo",
 		"type": "gato",
-		"abilities": "",		
-		"hobbies": ""
+		"abilities": "Ser hermoso",		
+		"hobbies": "Posar para memes",
+		"image": "./imgs/gatoLindo.jpg",
 	},
 	{
-		"id": 1,
-		"image": "./imgs/cobadf" ,
-		"name": "Tatito",
+		"id": 3,
+		"name": "Bombon",
+		"type": "perro",
+		"abilities": "Ser tierno",
+		"hobbies": "Subir historias",		
+		"image": "./imgs/caruchi.jpg",
+	},
+	{
+		"id": 4,
+		"name": "Copito",
+		"type": "cobayo",
+		"abilities": "Comer mucho",		
+		"hobbies": "Mordisquear cosas",				
+		"image": "./imgs/copito.jpg",
+	},
+	{
+		"id": 5,
+		"name": "Tomi",
 		"type": "gato",
-		"abilities": "",		
-		"hobbies": "",
+		"abilities": " sentarse",
+		"hobbies": "juega con compañia",
+		"image": "./imgs/tom.jpg",
+	},
+	{
+		"id": 6,
+		"name": "Quien?",
+		"type": "perro",
+		"abilities": "",
+		"hobbies": "Le gusta ladrar",
+		"image": "./imgs/quien.jpg",
+	},
+	{
+		"id": 7,
+		"name": "Sally",
+		"type": "gato",
+		"abilities": "Corre como gacela",
+		"hobbies": "Hace pirueta",
+		"image": "./imgs/sally.jpg",
+	},
+	{
+		"id": 8,
+		"name": "Draco",
+		"type": "perro",
+		"abilities": "Puede ser peligrosamente tierno",
+		"hobbies": "Bailar",		
+		"image": "./imgs/draco.jpg",
 	},
 
-
-
-
-
+	{
+		"id": 9,
+		"name": "El Sepsi",
+		"type": "perro",
+		"abilities": "Sociable",
+		"hobbies": "Peinarse",
+		"image": "./imgs/sepsi.jpg",
+	},
+	{
+		"id": 10,
+		"name": "Jacky",
+		"type": "gato",
+		"abilities": "Se victimiza",		
+		"hobbies": "Dormilona",	
+		"image": "./imgs/jacky.jpg",
+	},
+	{
+		"id": 11,
+		"name": "Gumi",
+		"type": "perro",
+		"abilities": "Mirar a su dueño con amor",		
+		"hobbies": "dar besos",		
+		"image": "./imgs/gumi.jpg",
+	},
+	{
+		"id": 12,
+		"name": "Sofi",
+		"type": "gato",
+		"abilities": "solita cariño",
+		"hobbies": "dormilona",
+		"image": "./imgs/sofy.jpg",
+		
+	},
 
 
 ]
+
+
+
+
+
 
 
 
