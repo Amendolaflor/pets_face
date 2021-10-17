@@ -8,6 +8,7 @@ const todasLasMascotas = [
 		"abilities": "Duerme sin descanso",
 		"hobbies": "Tomar sol",
 		"image": "./imgs/garfield.jpg",
+		
 	},
 	{
 		"id": 2,
