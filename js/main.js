@@ -1,8 +1,8 @@
-
 generarFichaMascotas(todasLasMascotas);
 agregarAmigo(todasLasMascotas);
+mostrarLista(todasLasMascotas)
 
-//  GENERANDO CONTENIDO HTML ---------
+//  GENERANDO SECCION AMIGXS ---------
 function generarFichaMascotas(mascotas) {
   for (const mascota of mascotas) {
     let contPadre = document.querySelector("#contenidoGenerado");
@@ -32,19 +32,56 @@ function generarFichaMascotas(mascotas) {
   }
 }
 
+
+//  MOSTRANDO LISTA DE AMIGOS ---------
+function mostrarLista(mascotas) {
+  for (const mascota of mascotas) {
+    let contPadre = document.querySelector("#modal-listaAmigos");
+    let contHijo = document.createElement("div");
+    contHijo.innerHTML = `<div class="modal fade" id="modalFavoritos" tabindex="-1" role="dialog .modal-sm" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog .modal-sm" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">❤️ Lista de Amiguitxs </h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body" >
+                                  <div id="listaAmigos"> 
+                                  </div>     
+                                </div>
+                                <div class="modal-footer">  
+                                  <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>        
+                                </div>      
+                              </div>
+                            </div>
+                          </div>`;
+    contPadre.appendChild(contHijo);
+  }
+}
+
 //  AGREGANDO AMIGXS ---------
 let listaAmigos = [];
-  
+
 function agregarAmigo(amigos) {
   for (const amigo of amigos) {
     let botonAgregar = document.getElementById(amigo.id);
     botonAgregar.onclick = () => {
+      listaAmigos.push(amigo)
       $("#notificacion").html(`Agregaste a ${amigo.name.toUpperCase()} como amigo ❤`);
-      listaAmigos.push(amigo);
+      salidaModal(amigo)
+      console.log(`agregado a tu lista ${amigo.name}`);
     };
   }
 }
 
+function salidaModal(amigo) {
+  let contPadre = document.querySelector("#listaAmigos")
+  let contHijo = document.createElement("div");
+  contHijo.innerHTML = `<h6>- ${amigo.name}</h6>`;
+  contPadre.appendChild(contHijo);
+}
+
 
 console.log(listaAmigos);
-
