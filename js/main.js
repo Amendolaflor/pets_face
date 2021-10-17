@@ -1,9 +1,8 @@
-//////    RECORREMOS ARRAY DE MASCOTAS PARA CREAR CONENIDO EN HTML 
-// for (let mascota of todasLasMascotas) {
-//   $("#contenidoGenerado").append(fichasMascotas(mascota));
-// }
 
-//  GENERANDO CONTENIDO HTML DE MANERA DINAMICA: SECCION PRODUCTOS TOTALES INDEX---------
+generarFichaMascotas(todasLasMascotas);
+agregarAmigo(todasLasMascotas);
+
+//  GENERANDO CONTENIDO HTML ---------
 function generarFichaMascotas(mascotas) {
   for (const mascota of mascotas) {
     let contPadre = document.querySelector("#contenidoGenerado");
@@ -32,21 +31,20 @@ function generarFichaMascotas(mascotas) {
     contPadre.appendChild(contHijo);
   }
 }
-generarFichaMascotas(todasLasMascotas)
 
-
+//  AGREGANDO AMIGXS ---------
 let listaAmigos = [];
   
 function agregarAmigo(amigos) {
   for (const amigo of amigos) {
     let botonAgregar = document.getElementById(amigo.id);
     botonAgregar.onclick = () => {
-      $("#notificacion").html(`AGREGASTE A ${amigo.name.toUpperCase()} COMO AMIGO`);
+      $("#notificacion").html(`Agregaste a ${amigo.name.toUpperCase()} como amigo ❤`);
       listaAmigos.push(amigo);
     };
   }
 }
 
-agregarAmigo(todasLasMascotas);
+
 console.log(listaAmigos);
 

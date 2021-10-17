@@ -1,3 +1,5 @@
+////// DATA ESTATICA --------------------
+
 const todasLasMascotas = [
 	{
 		"id": 1,
