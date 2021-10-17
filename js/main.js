@@ -19,11 +19,11 @@ function generarFichaMascotas(mascotas) {
                                   <p> Habilidades: ${mascota.abilities}</p>                                                                                                
                                     <p> Hobbies: ${mascota.hobbies}</p>
                                     <span class="text-grey"> <s> </s></span>                              
-                                  <button type="button" id=${mascota.id} class="btn btn-primary btn-sm mr-1 mb-2">
-                                    <i class="fas fa-shopping-cart pr-2"></i>Amigarse
+                                  <button type="button" id=${mascota.id} class="btn btn-danger btn-sm mr-1 mb-2">
+                                    <i class="far fa-heart"></i>Amigarse
                                   </button>
-                                  <button type="button" id=${mascota.name} class="btn btn-danger btn-sm px-3 mb-2 material-tooltip-main btn-fav" data-toggle="tooltip" data-placement="top" title="lista de deseos">
-                                    <i class="far fa-heart"></i>Desamigarse
+                                  <button type="button" id=${mascota.name} class="btn btn-primary btn-sm px-3 mb-2 material-tooltip-main btn-fav" data-toggle="tooltip" data-placement="top" title="lista de deseos">
+                                    Desamigarse
                                   </button>
                                 </div>
                               </div>
