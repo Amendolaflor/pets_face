@@ -79,3 +79,11 @@ main .card-deck .rating {
 
 
 /* seccion footer */
+
+#footer {
+  text-align: center;
+  padding: 100px; }
+  #footer .social-icon {
+    margin: 20px 10px; }
+  #footer p {
+    color: #8f8f8f; }
