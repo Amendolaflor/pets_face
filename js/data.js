@@ -5,10 +5,9 @@ const todasLasMascotas = [
 		"id": 1,
 		"name": "Garfiel",
 		"type": "gato",
-		"abilities": "Duerme sin descanso",
+		"abilities": "Abrir puertas",
 		"hobbies": "Tomar sol",
 		"image": "./imgs/garfield.jpg",
-		
 	},
 	{
 		"id": 2,
@@ -20,10 +19,10 @@ const todasLasMascotas = [
 	},
 	{
 		"id": 3,
-		"name": "Bombon",
+		"name": "Musi",
 		"type": "perro",
-		"abilities": "Ser tierno",
-		"hobbies": "Subir historias",		
+		"abilities": "Guiñar el ojo",
+		"hobbies": "Pedir caramelos",		
 		"image": "./imgs/caruchi.jpg",
 	},
 	{
@@ -36,18 +35,18 @@ const todasLasMascotas = [
 	},
 	{
 		"id": 5,
-		"name": "Tomi",
+		"name": "Tom",
 		"type": "gato",
 		"abilities": " sentarse",
-		"hobbies": "juega con compañia",
+		"hobbies": "Vivir en el baño",
 		"image": "./imgs/tom.jpg",
 	},
 	{
 		"id": 6,
 		"name": "Quien?",
 		"type": "perro",
-		"abilities": "",
-		"hobbies": "Le gusta ladrar",
+		"abilities": "Correr chueco",
+		"hobbies": "Ladrar a todo lo que se mueva",
 		"image": "./imgs/quien.jpg",
 	},
 	{
@@ -55,7 +54,7 @@ const todasLasMascotas = [
 		"name": "Sally",
 		"type": "gato",
 		"abilities": "Corre como gacela",
-		"hobbies": "Hace pirueta",
+		"hobbies": "Hacer piruetas",
 		"image": "./imgs/sally.jpg",
 	},
 	{
@@ -80,30 +79,29 @@ const todasLasMascotas = [
 		"name": "Jacky",
 		"type": "gato",
 		"abilities": "Se victimiza",		
-		"hobbies": "Dormilona",	
+		"hobbies": "Abrir puertas de un salto",	
 		"image": "./imgs/jacky.jpg",
 	},
 	{
 		"id": 11,
 		"name": "Gumi",
 		"type": "perro",
-		"abilities": "Mirar a su dueño con amor",		
-		"hobbies": "dar besos",		
+		"abilities": "Dar la patita",		
+		"hobbies": "Ensuciarse",		
 		"image": "./imgs/gumi.jpg",
 	},
 	{
 		"id": 12,
 		"name": "Sofi",
 		"type": "gato",
-		"abilities": "solita cariño",
-		"hobbies": "dormilona",
+		"abilities": "Aplastar a mi dueña",
+		"hobbies": "Pedir cariño siempre",
 		"image": "./imgs/sofy.jpg",
 		
 	},
 
 
 ]
-
 
 
 
