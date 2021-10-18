@@ -5,7 +5,7 @@ borrarAmigo(todasLasMascotas);
 
 //  GENERANDO SECCION AMIGXS ---------
 function generarFichaMascotas(mascotas) {
-  for (const mascota of mascotas) {
+  mascotas.forEach(mascota => {  
     let contPadre = document.querySelector("#contenidoGenerado");
     let contHijo = document.createElement("div");
     contHijo.innerHTML = `<div class="container">
@@ -30,12 +30,12 @@ function generarFichaMascotas(mascotas) {
                             </div>
                           </div>`
     contPadre.appendChild(contHijo);
-  }
+  });
 }
 
 //  MOSTRANDO LISTA DE AMIGOS ---------
 function mostrarLista(mascotas) {
-  for (const mascota of mascotas) {
+  mascotas.forEach(mascota => { 
     let contPadre = document.querySelector("#modal-listaAmigos");
     let contHijo = document.createElement("div");
     contHijo.innerHTML = `<div class="modal fade" id="modalFavoritos" tabindex="-1" role="dialog .modal-sm" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -58,7 +58,7 @@ function mostrarLista(mascotas) {
                             </div>
                           </div>`;
     contPadre.appendChild(contHijo);
-  }
+  });
 }
 
 let listaAmigos = [];
@@ -73,7 +73,7 @@ function agregarAmigo(amigos) {
       listaAmigos.push(amigo)
       $("#notificacion").html(`Agregaste a ${amigo.name.toUpperCase()} como amigo ❤`);
       agregarEnLista(amigo)
-      console.log(`Agregaste a tu lista a ${amigo.name}`);
+      //console.log(`Agregaste a tu lista a ${amigo.name}`);
       
     };
   }
@@ -91,10 +91,11 @@ function borrarAmigo(amigos) {
   for (const amigo of amigos) {
     let botonEliminar = document.getElementById(`id${amigo.name}`);
     botonEliminar.onclick = () => {
-      listaAmigos.pop()
-      contHijo.innerHTML = "";  
       $("#notificacion").html(`${amigo.name.toUpperCase()} esta muy triste que lo eliminaste.`);
-      console.log(`Eliminaste a tu lista a ${amigo.name}`);          
+      $("#div").html(`${amigo.name.toUpperCase()} esta muy triste que lo eliminaste.`);
+      listaAmigos.pop()
+      contHijo.innerHTML = "";       
+      //console.log(`Eliminaste a tu lista a ${amigo.name}`);          
     };
   }
 }
